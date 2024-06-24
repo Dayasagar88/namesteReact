@@ -1,0 +1,216 @@
+Package.json ==> is configration for npm, it keeps the track of what version is installed in our project/system
+package.lock.json ==> It keeps the track of exact version of bundler
+it is important to push package.json and package.lock.json on git hub it is very crucial
+
+There are two type of Dependency/package one is the normal and other one is Dev dependency
+dev Dependency ==> It is required when we are devloping are app(Devlopment phase)
+normal Dependency ==> It is used in production also
+
+parcel ==> it is bundler, it has some own dependencies, and that dependencies have thier ow dependencies(This is known as Transitive dependency)
+
+Node Module ==> It is a collection of dependencies, it is like tree of dependencies, it is like kind of database for all our package/code/project/file actual code i there
+
+npx ==> it is used when we want execute the package
+npm ==> it is used ,whan we want to install the package
+
+.parcel-cache ==>
+
+Dist Folder ==> When you run 'npx parcel index.html' it generate the devlopment build of your project means it generate the devlopment build files in Dist folder i.e HTML , js , and CSS files and hosted on localhost1234. And when you run 'npx parcel build index.html' it will generates the prooduction build of your project in Dist folder with heavy optimizations. All your code is comes from Dist folder which is displayed on the browser window
+
+If you run this command ==>  npx parcel build index.html(It will get into an error)
+to Resolve remove the "main" entry point from package.json
+
+npx parcel build index.html ==> This command is used for production build, it bundles all your code in Dist folder and do all the optimization that your code needs. 
+
+If you go to company and you don't know how to build/run your poject just go package.json file and check for scripts.
+
+
+When we create a react element it is an object after we render that object it becomes HTML Element.
+e.g ==> // React Element ==> Object ==> HTMLElement(render)
+        const heading = React.createElement("h1", {id: "heading"}, "Nameste React🚀");
+        
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(heading);
+
+
+JSX ==> JSX is HTML-like or XML-like syntax not a HTML
+// JSX(It is transpiled(converted) before it reaches the JS engine) Done by PARCEL --> Babel
+BABEl ==> The compiler for next generation JavaScript. It converts the JSX into JS.
+
+JSX(It is transpiled(converted) before it reaches the JS engine) -  Done by PARCEL - Babel
+JSX ==> React.createElement ==> ReactElement(JS-Object) ==> HTMLElement(render)
+
+When we are giving attribute in JSX syntax it should be camelCase
+
+
+React Component:-
+1. Class based component --> Old way of writing code
+   A function which returns some piece of code(JSX).
+
+2. Function based component --> Modern way of writing code
+
+
+Component composition ==> Component inside component
+
+
+In functional component we can pass variables, component , function call, and any javascript code,
+variable ==> {elem}, // e.g., const elem = <span>React Element</span>;
+
+Component ==> <Component />, <Component></Component>
+
+Function call ==> {function()}
+
+Javascript code ==> {100 + 200}
+
+
+config driven UI ==> All the UI is driven by config(data). The UI is getting chnaged according to the data coming from backend.The UI can be different for different states.
+
+
+=> Two types of export and import
+
+- Default import/export
+
+export default Component;
+import Component from "path";
+
+- Named import/export
+
+export const Varible_Name;
+import {Variable_Name} from "path";
+
+
+Whenever the State variable changes/updates react will rerender the components.
+Whenever the state variable changes/updates, react will be trigger and begin the reconsiliation cycle(Re-render the component)
+
+
+
+# Two types of routing in react
+- Client-side-routing ==> The whole code or components is loaded by the browser only once.There is no network call. 
+- Server-side-routing ==> The browser sends the request to server and fetch the data(e.g., HTML files) and reloads/rerenders the whole page.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

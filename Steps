@@ -1,0 +1,26 @@
+#step-1
+push the code github
+
+#step-2
+Install NPM
+command ==> npn init (we can use npm init -y but it will skip the some the packages)
+it will install the package.json file
+
+#step-3
+install parcel
+command ==> npm install -D parcel(it will install parcel as dev dependencies)
+it will install the package.lock.json and node-modules folder
+
+#step-4
+Run command ==> npx parcel index.html
+it will host the project localhost1234(server) and It will generate the devlopment build of your project
+
+#step-5
+Add scripts in package.json file ==> "start": "parcel index.html",
+                                     "build": "parcel index.html",
+It will aloow you to run project using start and build keyword in terminal.   
+
+#step-6
+React router:-
+command ==> npm install react-router-dom
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
