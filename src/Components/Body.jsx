@@ -70,7 +70,7 @@ const Body = ({card}) => {
       {/* Res-Card */}
       <div className="res-cards">
         {restaurantList.map((restaurant) => (
-          <Link to={"/restaurantMenu/"+restaurant.data.id} ><RestaurantCard key={restaurant.data.id} resData={restaurant} /></Link>
+          <Link to={"/restaurantMenu/"+restaurant.data.id}  key={restaurant.data.id} ><RestaurantCard key={restaurant.data.id} resData={restaurant} /></Link>
         ))}
       </div>
     </div>
